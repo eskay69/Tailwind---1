@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <body class="bg-gray-100">
+    <!-- Header Section -->
+    <header class="bg-green-600 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <div class="flex items-center">
+          <img
+            src="./images/googlelogo_light_color_92x30dp.png"
+            alt="Blog logo"
+            class="h-10 mr-2 w-auto"
+          />
+          <h1 class="text-2xl font-bold">Online Blog</h1>
+        </div>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#" class="hover:text-gray-300">Home</a></li>
+            <li><a href="#" class="hover:text-gray-300">About</a></li>
+            <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Featured Posts Section -->
+    <section class="container mx-auto py-8">
+      <h2 class="text-3xl font-semibold mb-4">Featured Posts</h2>
+      <div class="grid grid-cols-3 gap-8">
+        <!-- Post Card 1 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img
+            src="./images/external trade_1711375694.jpg"
+            alt="Post Image"
+            class="w-full"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">
+              Nigeria's External Trade improved, while Trade Surplus shrank in
+              2023
+            </h3>
+            <button
+              class="bg-green-600 text-white px-4 py-2 mt-4 rounded hover:bg-red-900"
+            >
+              <a
+                href="https://nesgroup.org/blog/Nigeria%27s-External-Trade-improved,-while-Trade-Surplus-shrank-in-2023"
+                >Read More</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- Post Card 2 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img
+            src="./images/food insecurity_1711370379.jpg"
+            alt="Post Image"
+            class="w-full"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">
+              NESG Issues a Policy Brief on the Status of Food Security in
+              Nigeria
+            </h3>
+            <button
+              class="bg-green-600 text-white px-4 py-2 mt-4 rounded hover:bg-red-900"
+            >
+              <a
+                href="https://nesgroup.org/blog/NESG-Issues-a-Policy-Brief-on-the-Status-of-Food-Security-in-Nigeria"
+                >Read More</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- Post Card 3 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img
+            src="./images/oil blog_1708771578.png"
+            alt="Post Image"
+            class="w-full"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">
+              Oil and Gas sector exits recession and propels the Nigerian
+              Economy in 2023Q4
+            </h3>
+            <button
+              class="bg-green-600 text-white px-4 py-2 mt-4 rounded hover:bg-red-900"
+            >
+              <a
+                href="https://nesgroup.org/blog/Oil-and-Gas-sector-exits-recession-and-propels-the-Nigerian-Economy-in-2023Q4"
+                >Read More</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="container mx-auto py-8">
+      <h2 class="text-3xl font-semibold mb-4">Categories</h2>
+      <div class="flex space-x-4">
+        <span class="bg-green-500 text-white px-2 py-1 rounded-full">NEWS</span>
+        <span class="bg-green-500 text-white px-2 py-1 rounded-full"
+          >INFOGRAPHIC</span
+        >
+        <span class="bg-green-500 text-white px-2 py-1 rounded-full"
+          >TRAVEL</span
+        >
+        <span class="bg-green-500 text-white px-2 py-1 rounded-full"
+          >BUSINESS BLOG</span
+        >
+      </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section class="container mx-auto py-8">
+      <h2 class="text-3xl font-semibold mb-4">Recent Posts</h2>
+      <ul>
+        <li class="mb-4">
+          <a href="#" class="text-lg font-semibold hover:text-red-500"
+            >NDLEA intercepts Qatar-bound drugs, officers reject N5m bribe</a
+          >
+          <span class="text-gray-500 text-sm ml-2"
+            >Published on March 31, 2024</span
+          >
+        </li>
+        <li class="mb-4">
+          <a href="#" class="text-lg font-semibold hover:text-red-500"
+            >VIDEO: Man swims Third Mainland Bridge lagoon to raise mental
+            health awareness</a
+          >
+          <span class="text-gray-500 text-sm ml-2"
+            >Published on March 29, 2024</span
+          >
+        </li>
+        <li class="mb-4">
+          <a href="#" class="text-lg font-semibold hover:text-red-500"
+            >Roundup: Dessers scores, Tella inspires Leverkusen</a
+          >
+          <span class="text-gray-500 text-sm ml-2"
+            >Published on March 28, 2024</span
+          >
+        </li>
+      </ul>
+    </section>
+
+    <!-- Newsletter Subscription Form -->
+    <section class="container mx-auto py-8">
+      <h2 class="text-3xl font-semibold mb-4">Subscribe to Our Newsletter</h2>
+      <form>
+        <div class="flex items-center">
+          <input
+            type="email"
+            class="w-full p-2 border border-gray-300 rounded-l focus:outline-none"
+            placeholder="Your Email Address"
+          />
+          <button
+            type="submit"
+            class="bg-green-600 text-white px-4 py-2 rounded-r hover:bg-red-700 focus:outline-none"
+          >
+            Subscribe
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-green-800 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <div>
+          <p>&copy; uche Online Blog</p>
+        </div>
+        <div class="flex space-x-4">
+          <span
+            ><a
+              href="https://twitter.com/yourtwitter"
+              target="_blank"
+              class="text-white-900 hover:underline"
+              ><i class="fa fa-twitter"></i></a
+          ></span>
+          <span
+            ><a
+              href="https://facebook.com/yourfacebook"
+              target="_blank"
+              class="text-white-900 hover:underline"
+              ><i class="fa fa-facebook"></i></a
+          ></span>
+          <span
+            ><a
+              href="https://github.com/yourgithub"
+              target="_blank"
+              class="text-white-900 hover:underline"
+              ><i class="fa fa-github"></i></a
+          ></span>
+          <span
+            ><a
+              href="https://instagram.com/your instagram"
+              target="_blank"
+              class="text-white-900  hover:underline"
+              ><i class="fa fa-instagram"></i></a
+          ></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
